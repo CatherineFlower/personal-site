@@ -9,3 +9,97 @@
     flex-shrink: 0;
     border: 2px solid #e5d5f5;
 }
+
+.brand-symbol img {
+    width: 32px;
+    height: 32px;
+}
+
+.star img {
+    display: inline-block;
+    width: 0.65em;
+    height: 0.65em;
+}
+
+.hero-spark img {
+    width: 50px;
+    height: 50px;
+}
+
+.outro-star img {
+    width: 150px;
+    height: 150px;
+}
+
+@media (max-width: 720px) {
+    .hero-spark img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .outro-star img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Увеличенный блок контактов */
+.contact-links {
+    max-width: 650px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.contact-links > p {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #51405F;
+    margin-bottom: 25px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.social-button {
+    flex: 1;
+    min-height: 64px;
+    padding: 16px 28px;
+    font-size: 17px;
+    justify-content: center;
+    border: 2px solid #B9A5EE;
+    border-radius: 40px;
+    background: #F6F3EE;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.social-button:hover {
+    background: #DFD7F5;
+    transform: translateY(-3px);
+}
+
+/* Мобильная версия */
+@media (max-width: 720px) {
+    .contact-links {
+        max-width: 100%;
+        margin-top: 35px;
+    }
+
+    .contact-links > p {
+        font-size: 24px;
+    }
+
+    .socials {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .social-button {
+        width: 100%;
+        min-height: 62px;
+        font-size: 17px;
+    }
+}

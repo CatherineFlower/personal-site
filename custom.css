@@ -150,3 +150,60 @@
         height: 34px;
     }
 }
+
+/* SVG ICON FIX 2026 - desktop and mobile */
+/* SVG вместо стрелок в тексте: одинаково в Chrome, Safari и Telegram. */
+.ui-arrow {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex: 0 0 auto;
+    object-fit: contain;
+    vertical-align: -0.12em;
+}
+.pill-button .ui-arrow,
+.nav-contact .ui-arrow,
+.site-footer .ui-arrow {
+    width: 1.05em;
+    height: 1.05em;
+}
+.pill-button.primary .ui-arrow,
+.nav-contact .ui-arrow { filter: brightness(0) invert(1); }
+.pill-button.primary .ui-arrow { font-size: 19px; }
+.hero-sticker .ui-arrow {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 11px;
+    right: 34px;
+    transform: none;
+}
+.decor-arrow img { width: 90px; height: 90px; display: block; }
+.site-footer a { display: inline-flex; align-items: center; gap: 4px; }
+.footer-heart { display: inline-block; width: 1em; height: 1em; vertical-align: -0.12em; }
+
+/* Смайлик остаётся внутри второй строки заголовка, после «заглянули». */
+.outro h2 .wave {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: -0.08em;
+    width: 0.82em;
+    height: 0.82em;
+    margin-left: 0.1em;
+    line-height: 1;
+    white-space: nowrap;
+}
+.outro h2 .wave img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* Декоративная звезда — самостоятельный слой, не участвует в переносе строки. */
+.outro-star img { display: block; width: 120px; height: 120px; }
+@media (max-width: 720px) {
+    .hero-sticker .ui-arrow { width: 20px; height: 20px; right: 28px; bottom: 7px; }
+    .outro h2 .wave { width: 0.72em; height: 0.72em; vertical-align: -0.06em; }
+    .outro-star img { width: 92px; height: 92px; }
+}

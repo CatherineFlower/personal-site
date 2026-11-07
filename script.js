@@ -45,7 +45,7 @@
   const socialItems=[['Telegram',contacts.telegram],['ВКонтакте',contacts.vk]];
   for(const [name,url] of socialItems){
     const href=safeUrl(url);if(!href)continue;
-    const a=document.createElement('a');a.className='pill-button social-button';a.href=href;a.target='_blank';a.rel='noopener noreferrer';a.textContent=name+' ↗';socials.appendChild(a);
+    const a=document.createElement('a');a.className='pill-button social-button';a.href=href;a.target='_blank';a.rel='noopener noreferrer';a.textContent=name;const arrow=document.createElement('img');arrow.className='ui-arrow ui-arrow-up-right';arrow.src='assets/icons/arrow-up-right.svg';arrow.alt='';arrow.setAttribute('aria-hidden','true');a.appendChild(arrow);socials.appendChild(a);
   }
   if(socials.childElementCount){document.getElementById('contacts').hidden=false;document.getElementById('nav-contact').hidden=false}
 })();

@@ -15,7 +15,7 @@ window.SITE_CONFIG = {
       tag: 'ВИДЕОВИЗИТКА · 2026',
       title: 'Моя творческая видеовизитка',
       description: 'Мисс и Мистер РТУ МИРЭА · вокал, гитара и танцы',
-      href: 'ССЫЛКА_НА_ВИДЕО',
+      href: 'https://drive.google.com/file/d/1F-7l9gU6d4I1knp_PcsMWtmbV5wloMnX/view?usp=drive_link',
       cover: 'visitka',
       coverImage: 'assets/visitka.JPG',
       icon: '▶'

@@ -1,0 +1,11 @@
+
+/* Личная фотография возле имени */
+.person-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 30%;
+    flex-shrink: 0;
+    border: 2px solid #e5d5f5;
+}

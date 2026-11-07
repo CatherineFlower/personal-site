@@ -103,3 +103,50 @@
         font-size: 17px;
     }
 }
+.brand-symbol img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.star img {
+    width: 0.68em;
+    height: 0.68em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hero-spark img {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+.outro-star img {
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.outro-smile img {
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+@media (max-width: 720px) {
+    .hero-spark img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .outro-star img {
+        width: 92px;
+        height: 92px;
+    }
+
+    .wave img {
+        width: 34px;
+        height: 34px;
+    }
+}

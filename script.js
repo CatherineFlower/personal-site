@@ -15,10 +15,20 @@
     a.href=href;a.target='_blank';a.rel='noopener noreferrer';
     a.setAttribute('aria-label',`${r.title}. Смотреть полную запись в Google Диске`);
     const visual=document.createElement('div');visual.className='video-visual';
-    if(covers[r.cover]){
-      const img=document.createElement('img');img.src=covers[r.cover];img.alt='';img.loading='lazy';visual.appendChild(img);
-    }else{
-      const decor=document.createElement('span');decor.className='abstract-icon';decor.textContent=r.icon||'♫';visual.appendChild(decor);
+
+    const coverSrc = r.coverImage || covers[r.cover];
+
+    if (coverSrc) {
+      const img = document.createElement('img');
+      img.src = coverSrc;
+      img.alt = '';
+      img.loading = 'lazy';
+      visual.appendChild(img);
+    } else {
+      const decor = document.createElement('span');
+      decor.className = 'abstract-icon';
+      decor.textContent = r.icon || '♫';
+      visual.appendChild(decor);
     }
     const play=document.createElement('span');play.className='play-pill';play.innerHTML='<span aria-hidden="true">▷</span> СМОТРЕТЬ ПОЛНОСТЬЮ';visual.appendChild(play);
     const content=document.createElement('div');content.className='video-copy';

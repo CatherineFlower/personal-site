@@ -17,7 +17,7 @@ window.SITE_CONFIG = {
       description: 'Мисс и Мистер РТУ МИРЭА · вокал, гитара и танцы',
       href: 'ССЫЛКА_НА_ВИДЕО',
       cover: 'visitka',
-      coverImage: 'assets/covers/visitka.webp',
+      coverImage: 'assets/visitka.JPG',
       icon: '▶'
     },
     {
@@ -26,6 +26,7 @@ window.SITE_CONFIG = {
       description: 'Сольный вокальный номер "Буги-вуги" · полная запись',
       href: 'https://drive.google.com/file/d/1FaGqg5fPS_BDk4VQUnllRjX_xGRpBvuN/view',
       cover: 'vocal',
+      coverImage: 'assets/vocal.jpg',
       icon: '♫'
     },
     {
@@ -34,6 +35,7 @@ window.SITE_CONFIG = {
       description: 'Песня "Лететь" с гитарой · полная запись',
       href: 'https://drive.google.com/file/d/1JZuIeRqNow69GcfvmaOOrIlqbE3coRrf/view',
       cover: 'guitar',
+      coverImage: 'assets/guitar.jpg',
       icon: '♬'
     },
     {
@@ -42,6 +44,7 @@ window.SITE_CONFIG = {
       description: 'Полная запись хорового выступления в Москве',
       href: 'https://drive.google.com/file/d/16wACWP2fUy_GQCazu_c5IowZyg7ijBaz/view',
       cover: 'choir',
+      coverImage: 'assets/choir.jpg',
       icon: '♪'
     },
     {
@@ -49,7 +52,8 @@ window.SITE_CONFIG = {
       title: 'Концерт в Ярославле',
       description: 'Форум Проектория · полная запись концертного выступления',
       href: 'https://drive.google.com/file/d/1mq_VmCIwP6-iREtyTb3Tt2egijuIF-Ki/view?usp=drive_link',
-      cover: 'choir',
+      cover: 'yaroslavl',
+      coverImage: 'assets/yaroslavl.jpg',
       icon: '♫'
     },
     {
@@ -58,6 +62,7 @@ window.SITE_CONFIG = {
       description: 'Репетиция латина-хорео · полная запись',
       href: 'https://drive.google.com/file/d/1UNhjQWaCPSuo4WxFN4KEQlWpB_P8sgek/view',
       cover: 'dance',
+      coverImage: 'assets/dance.jpg',
       icon: '✺'
     }
   ]

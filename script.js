@@ -2,9 +2,9 @@
   'use strict';
   const cfg=window.SITE_CONFIG||{};
   const grid=document.getElementById('video-grid');
-  const covers={
-    choir:'assets/choir.webp',
-    dance:'assets/dance.webp'
+  const covers = {
+    choir: 'assets/choir.jpg',
+    dance: 'assets/dance.jpg'
   };
   const safeUrl=(v)=>{try{const u=new URL(v);return u.protocol==='https:'?u.href:null}catch{return null}};
   (cfg.recordings||[]).forEach((r,index)=>{
